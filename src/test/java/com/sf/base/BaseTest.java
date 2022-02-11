@@ -19,21 +19,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.firebase.pages.LoginPage.LoginPage;
-import com.firebase.pages.profilePage.CalenderPage;
-import com.firebase.pages.profilePage.EmailPage;
 import com.firebase.pages.profilePage.HomePage;
-import com.firebase.pages.profilePage.SettingPage;
 import com.salesforce.utility.GenerateReport;
 import com.salesforce.utility.PropertiesConfguration;
-import com.sf.Opertunity.OpertunityPage;
-//import com.sf.Opertunity.OppertunityPiplinePage;
-import com.sf.account.AccountPage;
-import com.sf.account.ContactPage;
-import com.sf.account.CreateNewView;
-import com.sf.account.DatePage;
-import com.sf.account.MergeAccount;
-import com.sf.leadsPage.LeadPage;
-import com.sf.pages.HomePage.ProfilePage;
+
+
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -43,17 +34,7 @@ public class BaseTest {
 	protected static Properties prop;
 	protected static LoginPage loginPage;
 	protected static HomePage homePage;
-	protected static ProfilePage profilePage;
-	protected static SettingPage settingPage;
-	protected static EmailPage emailPage;
-	protected static AccountPage accountPage;
-	protected static CreateNewView veiw;
-	protected static MergeAccount mergeAccount;
-	protected static DatePage datePage;
-	protected static OpertunityPage oper;
-	protected static LeadPage leadPage;
-	protected static ContactPage contactPage;
-	protected static CalenderPage calenderPage;
+	
 
 	protected static GenerateReport report = GenerateReport.getInstance();
 	static {
@@ -80,17 +61,7 @@ public class BaseTest {
 
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
-		profilePage = new ProfilePage(driver);
-		settingPage = new SettingPage(driver);
-		emailPage = new EmailPage(driver);
-		accountPage = new AccountPage(driver);
-		veiw = new CreateNewView(driver);
-		datePage = new DatePage(driver);
-		oper = new OpertunityPage(driver);
-		mergeAccount = new MergeAccount(driver);
-		leadPage = new LeadPage(driver);
-		contactPage = new ContactPage(driver);
-		calenderPage = new CalenderPage(driver);
+		
 
 	}
 
@@ -127,7 +98,7 @@ public class BaseTest {
 	public static String takeScreenShot() {
 		TakesScreenshot screen = ((TakesScreenshot) driver);
 		File src_file = screen.getScreenshotAs(OutputType.FILE);
-		String file_path = "/Users/ashwiniramamurthy/eclipse-workspace/SalesforsPom/firebase.jpg";
+		String file_path = "/Users/ashwiniramamurthy/eclipse-workspace/SfPomAndCucumber/firebase.jpg";
 		File des_file = new File(file_path);
 		try {
 			FileUtils.copyFile(src_file, des_file);
@@ -135,7 +106,7 @@ public class BaseTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return "/Users/ashwiniramamurthy/eclipse-workspace/SalesforsPom/firebase.jpg";
+		return "/Users/ashwiniramamurthy/eclipse-workspace/SfPomAndCucumber/firebase.jpg";
 	}
 
 }

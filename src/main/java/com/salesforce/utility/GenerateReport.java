@@ -36,7 +36,7 @@ public class GenerateReport {
 
 	public void StartExtentReport() {
 		htmlReporter = new ExtentHtmlReporter(
-				"/Users/ashwiniramamurthy/eclipse-workspace/SalesforsPom/reporttest.html");
+				"/Users/ashwiniramamurthy/eclipse-workspace/SfPomAndCucumber/reporttest.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 

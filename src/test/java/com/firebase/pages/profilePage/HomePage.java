@@ -185,5 +185,8 @@ public class HomePage extends ReusableAllMethod{
 	public void clickMySettingButton() {
 		my_setting.click();
 	}
+	public String tittle() {
+		return driver.getTitle();
+	}
 
 }

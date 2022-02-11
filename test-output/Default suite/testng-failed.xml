@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sf.test.home.LeadsTest">
+      <class name="runner.LoginRunner">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="setup"/>
-          <include name="handleOpertunity22"/>
-          <include name="endUp"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.sf.test.home.LeadsTest -->
+      </class> <!-- runner.LoginRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

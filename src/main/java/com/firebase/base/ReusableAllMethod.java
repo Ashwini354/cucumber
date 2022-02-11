@@ -96,7 +96,7 @@ public class ReusableAllMethod {
 		driver.close();
 	}
 
-	public static String getTitleOfThePage() {
+	public String getTitleOfThePage() {
 		return driver.getTitle();
 	}
 
