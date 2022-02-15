@@ -6,4 +6,5 @@ public class Constant {
 public static final String EMAIL="ashu@techarc.com";
 public static final String TEXT="Check Your Email";
 public static final String TITLE="HOMEPAGE-SELENIUM";
+
 }
